@@ -1,0 +1,12 @@
+/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Shared/bin/Debug/net7.0/BlazorCrud.Shared.deps.json
+/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Shared/bin/Debug/net7.0/BlazorCrud.Shared.dll
+/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Shared/bin/Debug/net7.0/BlazorCrud.Shared.pdb
+/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Shared/obj/Debug/net7.0/BlazorCrud.Shared.csproj.AssemblyReference.cache
+/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Shared/obj/Debug/net7.0/BlazorCrud.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Shared/obj/Debug/net7.0/BlazorCrud.Shared.AssemblyInfoInputs.cache
+/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Shared/obj/Debug/net7.0/BlazorCrud.Shared.AssemblyInfo.cs
+/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Shared/obj/Debug/net7.0/BlazorCrud.Shared.csproj.CoreCompileInputs.cache
+/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Shared/obj/Debug/net7.0/BlazorCrud.Shared.dll
+/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Shared/obj/Debug/net7.0/refint/BlazorCrud.Shared.dll
+/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Shared/obj/Debug/net7.0/BlazorCrud.Shared.pdb
+/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Shared/obj/Debug/net7.0/ref/BlazorCrud.Shared.dll

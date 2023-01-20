@@ -1,6 +1,4 @@
-﻿<Properties StartupConfiguration="{ED98D0D3-0ED5-4715-B363-7EFBFA4066FD}|https">
-  <MonoDevelop.Ide.ItemProperties.BlazorCrud.Shared FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.BlazorCrud.Server FirstBuild="True" />
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{ED98D0D3-0ED5-4715-B363-7EFBFA4066FD}|https">
+  <MonoDevelop.Ide.ItemProperties.BlazorCrud.Server PreferredExecutionTarget="/Applications/Firefox.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BlazorCrud.Client FirstBuild="True" />
 </Properties>
