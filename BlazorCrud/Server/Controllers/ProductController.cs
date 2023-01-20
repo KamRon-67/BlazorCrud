@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using BlazorCrud.Server;
+using BlazorCrud.Server.Services.ProductService;
+using BlazorCrud.Shared;
 
 namespace BlazorCrud.Server.Controllers
 {
@@ -12,9 +13,18 @@ namespace BlazorCrud.Server.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
+
+        private readonly IProductService _productService;
+
         public ProductController(IProductService productService)
         {
+            _productService = productService;
+        }
 
+        [HttpGet]
+        public async Task<List<Product>> GetProducts()
+        {
+            return await _productService.GetProducts();
         }
     }
 }

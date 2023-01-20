@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.ResponseCompression;
 using BlazorCrud.Server.Data;
 using Microsoft.EntityFrameworkCore;
+using BlazorCrud.Server.Services.ProductService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<DataContext>(o => o.UseSqlite
 ("filename=Data/Database/Data.db"));
+builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
