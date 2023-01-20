@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.ResponseCompression;
+using BlazorCrud.Server.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddDbContext<DataContext>(o => o.UseSqlite
+("filename=Data/Database/Data.db"));
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
