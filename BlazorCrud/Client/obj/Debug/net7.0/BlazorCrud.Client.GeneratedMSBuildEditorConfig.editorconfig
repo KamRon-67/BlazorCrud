@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Client/Pages/Product.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/blue/Documents/GitHub/CRUD-With-Blazor/BlazorCrud/BlazorCrud/Client/Pages/Products.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

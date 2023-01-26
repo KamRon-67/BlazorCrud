@@ -5,28 +5,40 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BlazorCrud.Server.Services.ProductService
 {
-	public class ProductService : IProductService
-	{
-        private DataContext _context;
+    public class ProductService : IProductService
+    {
+        private readonly DataContext _context;
 
         public ProductService(DataContext context)
-		{
+        {
             _context = context;
-		}
-
-        public Task<Product> CreateProduct(Product product)
-        {
-            throw new NotImplementedException();
         }
 
-        public Task<bool> DeleteProduct(int productId)
+        public async Task<Product> CreateProduct(Product product)
         {
-            throw new NotImplementedException();
+            _context.Add(product);
+            await _context.SaveChangesAsync();
+            return product;
         }
 
-        public Task<Product?> GetProductById(int productId)
+        public async Task<bool> DeleteProduct(int productId)
         {
-            throw new NotImplementedException();
+            var dbProduct = await _context.Products.FindAsync(productId);
+            if (dbProduct == null)
+            {
+                return false;
+            }
+
+            _context.Remove(dbProduct);
+            await _context.SaveChangesAsync();
+
+            return true;
+        }
+
+        public async Task<Product?> GetProductById(int productId)
+        {
+            var dbProduct = await _context.Products.FindAsync(productId);
+            return dbProduct;
         }
 
         public async Task<List<Product>> GetProducts()
@@ -34,9 +46,19 @@ namespace BlazorCrud.Server.Services.ProductService
             return await _context.Products.ToListAsync();
         }
 
-        public Task<Product?> UpdateProduct(int productId, Product product)
+        public async Task<Product?> UpdateProduct(int productId, Product product)
         {
-            throw new NotImplementedException();
+            var dbProduct = await _context.Products.FindAsync(productId);
+            if (dbProduct != null)
+            {
+                dbProduct.Title = product.Title;
+                dbProduct.Category = product.Category;
+                dbProduct.Price = product.Price;
+
+                await _context.SaveChangesAsync();
+            }
+
+            return dbProduct;
         }
     }
 }
